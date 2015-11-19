@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+
+
+
+
+ {% block message %}
+    <br><br><br><br>
+    <div class="container">
+    {% if messages %}
+    <div class='row'>
+    <div class= 'col-sm-6 col-sm-offset-3' >
+          {% for message in messages %}
+        <p{% if message.tags == "success" %} class="alert alert-success" 
+        {% else %} class="alert alert-info" {% endif %}>{{ message }}</p>
+        </p>
+        
+      {% endfor %}
+      
+    </div>
+    </div>  
+      {% endif %}
+
+  </div>
+ {% endblock %}   
+
+
+{% block content %}
+
+
+
+<div class = 'row'>
+<div class = 'col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1' >
+
+<!-- {% if messages %}
+<ul class="hidden-messages" style="display:none">
+    {% for message in messages %}
+        <div id="notice" align="center">
+            {{ message }}
+        </div>
+    {% endfor %}
+</ul>
+{% endif %} -->
+
+<form>
+{{ form|crispy}}
+
+<form method="POST" enctype="multipart/form-data" >{% csrf_token %}
+ 
+<input class = "btn btn-info" type="submit"  value="Update/Save">
+<!-- <input type="button"  onclick="Dajaxice.examples.dajaxice_example(my_callback)" value="Get message from server!">	
+	<form action="" method="post" id="my_form" accept-charset="utf-8">{% csrf_token %}
+    {{ form.as_p }}
+    <p><input type="button" value="Send" onclick="send_form()"></p>
+ -->
+</form>
+
+<br><br>
+
+
+{% endblock %}

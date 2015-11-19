@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load django_markdown %}
+
+{% block search_result %}
+
+<br><br><br><br>
+  
+
+      <div class="col-sm-10">
+            {% for entry in ent_search %}
+            <h2><a href="" id="this_url" class="active">{{ entry.title }}</a></h2>
+          <!-- <h3>{{ entry.title }}</h3> -->
+          <p>
+              {{ entry.body }}
+          </p>
+            
+
+          {% empty %}
+          <p>No results found.</p>
+          {% endfor %}
+
+
+      <div >
+{% endblock %}

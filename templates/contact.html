@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block contact %}
+<br><br><br><br>
+<div class = 'row'>
+<div class = 'col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1' >
+	 
+<h1>{{ title }}</h1>
+
+{% if confirm_message %} <!--in def contactUs context-->
+<h4><font color='green'>{{ confirm_message}}</font></h4>
+{% endif %}
+
+
+{% if form %}<!--in def contactUs context-->
+<form method=POST action=''>{% csrf_token %}
+{{ form|crispy }}
+
+
+
+
+<input type=submit value =send class="btn btn-success"/>
+	
+	
+</form>
+
+{% endif %}
+</div>
+</div>
+{% endblock %}

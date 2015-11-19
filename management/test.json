@@ -1,0 +1,51 @@
+[
+{
+    "fields": {
+        "username": "avkpol",
+        "first_name": "Andriy",
+        "last_name": "Petrenko",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2015-03-26",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$12000$YluCbMyidWwL$yH",
+        "email": "aabc@gmail.com",
+        "skype": "avkpol"
+    },
+    "model": "auth.user",
+    "pk": 4
+},
+{
+    "fields": {
+        "expire_date": "2015-04-09T13:20:01.906Z",
+        "session_data": "ZTkwZGQ3MTBkYWEzNmMzMWM1YmNiN2VhNjcxYmYjR9"
+    },
+    "model": "sessions.session",
+    "pk": "jz0th8oen98tmsq1hmsjmdu1lb6jx8z0"
+},
+{
+    "fields": {
+        "first_name": "Oleg",
+        "last_name": "Petrenko",
+        "middle_name": "",
+        "photo": "",
+        "notes": "",
+        "student_group": null,
+        "birthday": "2015-03-26",
+        "ticket": "123"
+    },
+    "model": "students.student",
+    "pk": 17
+},
+{
+    "fields": {
+        "notes": "",
+        "leader": 17,
+        "title": "MTM"
+    },
+    "model": "students.group",
+    "pk": 5
+}
+]

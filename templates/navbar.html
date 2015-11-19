@@ -1,0 +1,45 @@
+  
+   <div id='nav' class=" navbar navbar-default navbar-fixed-top"  role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          
+		  <a class="navbar-brand" href="#"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+			
+              {% url "about" as about %}
+              {% url "contact" as contact %}
+              
+
+            <li {% if request.path == home %}class="active" {% endif %}>
+                  <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li {% if request.path == home %}class="active" {% endif %}>
+                  <a href="{% url 'add' %}">Add new Article</a>
+            </li>
+            <!-- <li {% if request.path == create %}class="active" {% endif %}>
+              <a href="{% url 'create' %}">User Data</a>
+            </li>
+
+            <li {% if request.path == about %}class="active" {% endif %} >
+                <a href="{% url 'checkout' %}">Checkout</a>
+            </li>
+            <li {% if request.path == contact %}class="active" {% endif %}>
+              <a href="{% url 'contact' %}">Contact</a>
+            </li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+              {% if not request.user.is_authenticated %}
+                <li><a href="{% url 'account_login' %}">Login</a></li>
+                <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+               {% else %}
+                <li><a href="{% url 'account_logout' %}">Logout</a></li>
+                {% endif %}
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load django_markdown %}
+
+{% block blog_entries %}
+
+<br><br><br><br>
+<div class='container'> 
+  <div class="post">
+     
+    <h2><a href="{% url 'entry_detail' slug=object.slug %}"  id="this_url" >{{ object.title }}</a></h2> 
+    		<!-- <a href="{% url 'entry' %}?article_id={{page.id}}">{{ object.title }}</a> -->
+     <!-- {% if page.views > 1 %}
+            ({{ page.views }} views)
+            {% elif page.views == 1 %}
+            ({{ page.views }} view)
+        {% endif %} -->
+
+    <p class="meta">
+      {{ object.created }} |
+      Tagged under {{  object.tags.all|join:", " }}
+    </p>
+    {{ object.body|markdown }}
+
+ 		<p>
+
+
+               <strong id="like_count">{{ entry.likes }}</strong>  <em>people like this article</em>
+
+			{% if user.is_authenticated %}
+			        <button id="likes" data-artid="{{entry.id}}" class="btn btn-primary" type="button">
+			        <!-- <span class="glyphicon glyphicon-thumbs-up"></span> -->
+			        Like
+			        </button>
+			{% endif %}
+
+    </p>
+
+
+   
+ </div>
+</div>
+{% endblock %}

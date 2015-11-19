@@ -1,0 +1,376 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"json",
+				"json_dict"
+			],
+			[
+				"autofill",
+				"autofillform_view"
+			],
+			[
+				"User",
+				"UserDataForm"
+			],
+			[
+				"create",
+				"create_model"
+			],
+			[
+				"j",
+				"join"
+			],
+			[
+				"save",
+				"save_it"
+			],
+			[
+				"S",
+				"SignUp"
+			],
+			[
+				"render",
+				"render_to_response"
+			],
+			[
+				"B",
+				"BlogDetail"
+			],
+			[
+				"django",
+				"django_markdown"
+			],
+			[
+				"co",
+				"contact_message"
+			],
+			[
+				"a",
+				"auto_now_add"
+			],
+			[
+				"re",
+				"render"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"class",
+				"class_"
+			],
+			[
+				"r",
+				"response"
+			],
+			[
+				"i",
+				"ifmain	if __name__ == '__main__'"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/Storage/_codework/experiments/42cc/src"
+	],
+	"file_history":
+	[
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/views/load_fixture.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/views/user.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/autofill.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/autofill_form.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/autofillform_view.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/user.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/model_create_and_fill.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/views/autofillform_view.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/admin.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/models.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/models/user_model.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/qblog/urls.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/checkout.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/requestdb_model.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/custom_middleware.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/blog/urls.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/sessions.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/views/http_display.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/test.json",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/qblog/settings.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/blog/admin.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/models/__init__.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/views/sessions.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/checkout/views.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/contact.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/home.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/views/user_data.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/management/views/ __init__.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/base.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/blog/test.json",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/navbar.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/blog/migrations/test.json",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/account/password_reset_from_key.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/account/login.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/account/reset/password_reset.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/account/password_reset.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/static/css/blog.css",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/account/logout.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/account/password_reset_done.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/account/password_reset_from_key_done.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/account/signup.html",
+		"/Users/K/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/blog/views.py",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/signup_hm.html",
+		"/Users/K/Library/Application Support/Sublime Text 3/Packages/User/HTML.sublime-settings",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/account/password/reset.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/post.html",
+		"/Volumes/Storage/_codework/blogsample1/qblog/qblog/templates/profile.html",
+		"/Users/K/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Volumes/Storage/_codework/jmitchel/trydjango_17/static/templates/navbar.html",
+		"/Volumes/Storage/_codework/jmitchel/trydjango_17/static/templates/profile.html",
+		"/Volumes/Storage/_codework/jmitchel/trydjango_17/static/templates/account/login.html",
+		"/Volumes/Storage/_codework/jmitchel/trydjango_17/static/templates/account/signup.html",
+		"/Volumes/Storage/_codework/jmitchel/trydjango_17/static/templates/home.html",
+		"/Volumes/Storage/JMitchel/TryDjango 1.7/Try Django 1.7/static/templates/bootstrap_template.html",
+		"/Volumes/Storage/JMitchel/TryDjango 1.7/Try Django 1.7/static/templates/home.html",
+		"/Volumes/Storage/JMitchel/TryDjango 1.7/Try Django 1.7/static/templates/base.html",
+		"/Volumes/Storage/JMitchel/TryDjango 1.7/Try Django 1.7/static/templates/navbar.html",
+		"/Volumes/Storage/codework/tests/filter.js/examples/data/stream_movies.json",
+		"/Volumes/Storage/codework/tests/filter.js/examples/data/2.json",
+		"/Volumes/Storage/codework/tests/filter.js/examples/data/1.json",
+		"/Volumes/Storage/codework/tests/filter.js/examples/index.js",
+		"/Volumes/Storage/codework/tests/filter.js/examples/index.html",
+		"/data/work/virtualenvs/studentsdb/src/studentsdb/students/util.py",
+		"/Users/K/user_work/blogsample/qblog/blog/admin.py",
+		"/Users/K/user_work/blogsample/qblog/blog/templates/base.html",
+		"/Users/K/user_work/blogsample/qblog/static/css/bootstrap.min.css",
+		"/Users/K/user_work/blogsample/qblog/templates/home.html",
+		"/Users/K/user_work/blogsample/qblog/static/css/blog.css",
+		"/Users/K/user_work/blogsample/qblog/blog/templates/home.html",
+		"/data/work/virtualenvs/studentsdb/src/studentsdb/students/templates/search/search.html",
+		"/data/work/virtualenvs/studentsdb/src/studentsdb/SHOW",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/demo/demo/urls.py",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/demo/myapp/models.py",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/demo/templates/search/search.html",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/demo/myapp/forms.py",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/demo/myapp/views.py",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/demo/templates/search/indexes/myapp/note_text.txt",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/demo/myapp/search_indexes.py",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/demo/demo/settings.py",
+		"/Users/K/Desktop/djangopro/mvp_landing/search_solr_demo/haystack-example/haystack_example/manage.py",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/solr_download.sh",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/apt-requirements.txt",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/requirements.txt",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/solr/example/solr/collection1/conf/schema.xml",
+		"/Users/K/Desktop/djangopro/mvp_landing/searchdemo/haystackdemo/demo/myapp/tests.py",
+		"/Users/K/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/K/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/K/Desktop/djangopro/mvp_landing/templates/javascript.html",
+		"/Users/K/Desktop/djangopro/mvp_landing/templates/head_css.html",
+		"/Users/K/Desktop/djangopro/mvp_landing/mvp_landing/settings.py",
+		"/Users/K/Desktop/djangopro/mvp_landing/templates/navbar.html",
+		"/Users/K/Desktop/djangopro/mvp_landing/newsletter/views.py",
+		"/Users/K/Desktop/djangopro/mvp_landing/static_in_project/our_static/css/bootstrap.min.css",
+		"/Users/K/Desktop/djangopro/mvp_landing/static_in_project/our_static/css/navbar-static-top.css",
+		"/Users/K/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/K/Desktop/djangopro/mvp_landing/templates/home.html",
+		"/Users/K/Desktop/djangopro/mvp_landing/newsletter/templates/home.html",
+		"/Volumes/Storage/Pycharm_projects/pyscripts/parser.py",
+		"/Users/K/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/Storage/codework/tests/filter.js",
+			"/Volumes/Storage/codework/tests/filter.js/examples/data",
+			"/Volumes/Storage/codework/tests/filter.js",
+			"/Volumes/Storage/codework/tests/filter.js/examples/data",
+			"/Users/K/user_work/datatables_example/datatables/django-datatable/example"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"suggest",
+			"account_login",
+			"stream_",
+			"crime",
+			"runtime",
+			"result_count",
+			"sidebar_list",
+			"*.json",
+			"data/stream_movies.json",
+			"rating",
+			"table_tags",
+			"<field name=",
+			"lang/stopwords_en.txt",
+			"<field name=",
+			"stopwords_en.txt",
+			"myapp.",
+			"myapp.model",
+			"myapp",
+			"myapp.model",
+			"models.model",
+			"myapp",
+			"myapp.model",
+			"\"model\": \"note\"",
+			"model",
+			"note",
+			"pages=[]\n	# for page in page_all:\n	# 	for row in page.find_all('a'):\n	# 		pages.append(row)\n	# 		return len(pages)\n",
+			"find_all"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 146.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "experiments_42cc.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 307.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% load django_markdown %}
+
+{% block content %}
+   
+ <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Selected Articles</h1>
+        <p class="lead blog-description">Selecting articles Python/Django </p>
+      </div>
+    
+
+{% endblock %}
+
+{% block search %}
+<div >
+<form method="get" action="/search">
+        <table>
+            {{ form.as_table }}
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                      <!-- <input type="text" name="q"> -->
+                      <!-- <button type="submit">Search</button> -->
+                      <div class="input-group">
+                      <!-- <input type="text" name="q"> -->
+			      			<input type="text" class="form-control" placeholder="Search for..." name='q'>
+			              <span class="input-group-btn">
+                      <button class="btn btn-info " type="submit">Search!</button>
+						 </span>
+			    </div>
+                </td>
+            </tr>
+        </table>
+            {% for article in page.object_list %}
+   <p>Student:<span style= "color:blue"> {{ article.object.title }}&nbsp;{{ article.object.title }}</span></p>
+   
+   <p>Ticket: <span style= "color:blue">{{ article.object.body }}</span></p>
+   <p>Group: <span style= "color:blue"> {{ article.object.slug }}</span></p>
+
+     {% endfor %}
+					<!-- {% for entry in ent_search %}
+					<h1>{{ entry.title }}</h1>
+					<p>
+					    {{ entry.body }}
+					</p>
+					{% endfor %} -->
+					{% for result in page.object_list %}
+   						<p>Text:<span style= "color:blue"> {{ result.object.body }}</span></p>
+   
+   						<p>Title: <span style= "color:blue">{{ result.object.title }}</span></p>
+   
+					  
+
+					{% empty %}
+					{#   <p>No results found.</p>#}
+					{% endfor %}
+		</div>
+
+{% endblock %}
+
+ 
+
+{% block blog_entries %}
+
+
+
+
+ <div class="row">
+
+    <div class="col-sm-8 blog-main">
+
+		{% for object in object_list %}
+		  <div class="post">
+		    <h2><a href="{% url 'entry_detail' slug=object.slug %}" id="this_url" class="link">{{ object.title }}</a></h2>
+		    <p class="meta">
+		      {{ object.created }} |
+		      {{  object.tags.all|join:", " }}
+		    </p>
+		    <p> {{ object.body|markdown|truncatewords:15 }}
+		    <a href="{% url 'entry_detail' slug=object.slug %}">more</a></p>
+ 
+		  {% endfor %}
+		</div>
+	</div>	
+
+
+
+
+
+
+	
+
+{% endblock %}
+
+{% block sidebar %}
+
+	    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+		
+		<br>
+	
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Top Article 1</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod</p>
+          </div>
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Top Article 2</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. .</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+            </ol>
+          </div>
+	   </div>
+
+{% endblock %}
+
+
+
+<!-- 	<form method="get" action="">
+        <table>
+            {{ form.as_table }}
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                      <input type="text" name="q">
+                      <button type="submit">Search</button>
+
+                </td>
+            </tr>
+        </table>
+        </form>
+            {% for result in page.object_list %}
+   <p>Text:<span style= "color:blue"> {{ result.object.body }}</span></p>
+   
+   <p>Title: <span style= "color:blue">{{ result.object.title }}</span></p>
+   
+           
+
+{% empty %}
+<p>No results found.</p>
+{% endfor %} -->
+
+
+<!-- 
+
+
+
+<strong id="like_count">{{ category.likes }}</strong> people like this category
+
+{% if user.is_authenticated %}
+        <button id="likes" data-catid="{{category.id}}" class="btn btn-primary" type="button">
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+        Like
+        </button>
+{% endif %}
+
+</p>  -->
