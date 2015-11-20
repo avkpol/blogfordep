@@ -6,7 +6,9 @@ It exposes the WSGI callable as a module-level variable named ``application``.
 For more information on this file, see
 https://docs.djangoproject.com/en/dev/howto/deployment/wsgi/
 """
-
+<body>
+        <h1>Hello world!</h1>
+</body>
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "qblog.settings")
 
