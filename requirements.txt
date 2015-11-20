@@ -45,7 +45,7 @@ py2app==0.7.1
 pyOpenSSL==0.15.1
 pyasn1==0.1.9
 pycparser==2.14
-pyobjc-core==2.3.2a0
+
 pyobjc-framework-AddressBook==2.3.2a0
 pyobjc-framework-AppleScriptKit==2.3.2a0
 pyobjc-framework-AppleScriptObjC==2.3.2a0
