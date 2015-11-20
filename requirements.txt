@@ -50,7 +50,7 @@ pycparser==2.14
 pysolr==3.3.2
 python-dateutil==1.5
 python-openid==2.2.5
-python-social-auth==0.2.13
+
 pytz==2012d
 requests==2.8.1
 requests-oauthlib==0.5.0
