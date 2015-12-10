@@ -11,7 +11,7 @@ $(document).ready(function () {
           // e.defaultPrevented;
       });
  });
-
+console.log("qqqqq");
 // // function send_form(){
 // //     Dajaxice.examples.send_form(Dajax.process,{'form':$('#my_form').serialize(true)});
 
@@ -24,21 +24,44 @@ $(document).ready(function () {
              console.log("bbbb");
     });
 });
+$('#install').click(function(){
+ $.ajax({
+      type:'get',
+      url:/contact/,
+      cache:false,
+      //data:<if any arguments>,
+      // async:asynchronous,
+      //dataType:json, //if you want json
+      success:function(data) {
+        cc_gen();
+        console.log("success");
+      },
+   });
+ });
+ // $(document).on('click','#install', function(){
+ //            $('#hid').val(data)
+ //            document.forms["myForm"].submit();
+ //        })
 
+ function cc_gen(request) {
+                // window.open(url);
+                $.get('/contact/', function (data) {
+                    alert("counter updated!");
+                });
+            }
 
-
-      $('a.link').click(function() {
-        console.log("xxxxx");
-        var pageId; 
-        pageId = $('#this_url').attr('class')
-        $.get(/entry/, {id:pageId},function(data){
+      // $('a.link').click(function() {
+      //   console.log("xxxxx");
+      //   var pageId; 
+      //   pageId = $('#this_url').attr('class')
+      //   $.get(/entry/, {id:pageId},function(data){
      
       
-      console.log("aaaaa");
+      // console.log("aaaaa");
 
-      });
+      // });
       
- })   
+ // })   
 
 
 // });

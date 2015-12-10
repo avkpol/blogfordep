@@ -3,6 +3,13 @@
 
 {% block contact %}
 <br><br><br><br>
+
+{{ name }}<br>{{ p }}
+<br>{{ res }}<br><br><br>
+<h4>{{ text }}</h4><br>
+<h5>{{ result }}</h5><br>
+
+
 <div class = 'row'>
 <div class = 'col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1' >
 	 
@@ -26,6 +33,28 @@
 </form>
 
 {% endif %}
+
+<input type="text" name="name" id="name">
+<button type="button" id="install" onclick="cc_gen()" value="checkvalue">Press to install</button>
+
+<form id="myForm" action="/request_page url/" method="post">
+    <input type="hidden" id="hid" name="hid"/>
+</form>
+<button type="button" id="install" >Press</button>
+
+
+<button onclick="cc_gen('', 12345);">I update object 12345</button>
+<button onclick="cc_gen('', 999);">I update object 999</button>
+
+
+<form action = "" method="POST"> 
+    <input id="submit" type="button" value="Click" />
+</form>
+<input id="submit" type="button" value="Click222" data_url/>
+
+
+<a target="_blank" class="btn btn-info pull-right 10" href="">Check It Out</a>
+
 </div>
 </div>
 {% endblock %}

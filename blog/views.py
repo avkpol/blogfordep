@@ -8,7 +8,7 @@ from . import models
 from .forms import ContactForm
 from .models import Profile, Entry
 
-from .forms import EntrySearchForm, AddArticleForm
+from .forms import EntrySearchForm, AddArticleForm, BashOnButtonForm
 
 from haystack.generic_views import SearchView
 from django.contrib import messages
@@ -88,6 +88,7 @@ def track_url(request):
     if request.method == 'GET':
         if 'slug' in request.GET:
             article_slug = request.GET['slug']
+            import ipdb; ipdb.set_trace()
             try:
                 page = Entry.objects.get(slug=article_slug)
                 page.views = page.views + 1
@@ -124,6 +125,70 @@ def add_article(request):
 
 
     return render(request, 'add.html', context )
+
+import os
+import subprocess
+from subprocess import Popen, PIPE
+import pexpect
+import sh
+from sh import tail
+def cc_gen(request):
+    name = "AAAAAAA"
+    
+    form = BashOnButtonForm
+    path = '/volumes/storage/_codework/blogsample1/qblog/qblog/blog/openvpn.sh'
+    # path1 = '/volumes/storage/_codework/blogsample1/qblog/qblog/blog/openvpn.sh'
+    # os.chmod(path1, 755)
+    # subprocess.check_output(['bash', '-c', '/volumes/storage/_codework/blogsample1/qblog/qblog/blog/openvpn_install.sh && testerSSLTSL'])
+    # bashCommand = "cwm --rdf test.rdf --ntriples > test.nt"
+    
+    # process = subprocess.Popen(bashCommand.split())
+    # output = process.communicate()[0]
+
+    proc = Popen(
+    "bash /volumes/storage/_codework/blogsample1/qblog/qblog/blog/openvpn.sh",
+
+    shell=True,
+    stdout=PIPE, stderr=PIPE
+    )
+    proc1 = Popen(
+    "openvpn --genkey --secret key",
+    
+    shell=True,
+    stdout=PIPE, stderr=PIPE
+    )
+    proc1.wait()    # wait for end process
+    res = proc.communicate()  # get tuple('stdout res', 'stderr res')
+    # result = proc.stdout.readlines()
+    # text = proc.stdout.read()
+    res1 = proc1.communicate()
+    
+    # os.chmod(path, 755) # give permissions
+    
+    # p = subprocess.Popen(['openvpn.sh' ,'1'], shell=True, stdout=subprocess.PIPE)
+    # c = subprocess.call(["df","-h",path])
+    # line = p.stdout.readline()
+    # line1 = p.stderr.readlines()
+    # run = sh.Command('openvpn.sh') # Absolute path
+    # run()
+    # lscmd = sh.Command("ls")  # Absolute path not needed
+    # lscmd()
+    # for line in tail("-f", path, _iter=True):
+    #     d = line
+    #     print d
+    return render_to_response('contact.html', locals(), RequestContext(request))
+
+# from subprocess import Popen, PIPE
+# proc = Popen(
+#     "python D:/axe/python/easygui/easygui.pyw",
+#     shell=True,
+#     stdout=PIPE, stderr=PIPE
+# )
+# proc.wait()   
+# res = proc.communicate()  
+# if proc.returncode:
+#     print res[1]
+# print 'result:', res[0]
 
 
 # def post_like(request):

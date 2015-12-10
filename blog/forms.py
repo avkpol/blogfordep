@@ -29,3 +29,6 @@ class AddArticleForm(forms.ModelForm):
 
 		exclude = ['publish','modified','views','likes','tags']
 
+class BashOnButtonForm(forms.Form):
+	bash_input = forms.CharField(max_length=128,required=True, label="client_key" )
+

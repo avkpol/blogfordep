@@ -8,31 +8,31 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
-import dj_database_url
+# import dj_database_url
 
-# Parse database configuration from $DATABASE_URL
-DATABASES = {'default': dj_database_url.parse('postgres://...')}
-HEROKU_POSTGRESQL_ONYX_URL = 'postgres://...'
+# # Parse database configuration from $DATABASE_URL
+# DATABASES = {'default': dj_database_url.parse('postgres://...')}
+# HEROKU_POSTGRESQL_ONYX_URL = 'postgres://...'
 
-# Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# # Honor the 'X-Forwarded-Proto' header for request.is_secure()
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# Allow all host headers
-ALLOWED_HOSTS = ['*']
+# # Allow all host headers
+# ALLOWED_HOSTS = ['*']
 
-# Enable Connection Pooling
-DATABASES['default']['ENGINE'] = 'django_postgrespool'
-PORT = 5432
+# # Enable Connection Pooling
+# DATABASES['default']['ENGINE'] = 'django_postgrespool'
+# PORT = 5432
 
-STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# STATIC_ROOT = 'staticfiles'
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
 
-# Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# # Simplified static file serving.
+# # https://warehouse.python.org/project/whitenoise/
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 
@@ -133,6 +133,7 @@ INSTALLED_APPS = (
     'checkout',
     'management',
     'django_markdown',
+    
     # 'dajaxice',
     # 'dajax',
 

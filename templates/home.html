@@ -34,10 +34,10 @@
             </tr>
         </table>
             {% for article in page.object_list %}
-   <p>Student:<span style= "color:blue"> {{ article.object.title }}&nbsp;{{ article.object.title }}</span></p>
+   <p><span style= "color:blue"> {{ article.object.title }}&nbsp;{{ article.object.title }}</span></p>
    
-   <p>Ticket: <span style= "color:blue">{{ article.object.body }}</span></p>
-   <p>Group: <span style= "color:blue"> {{ article.object.slug }}</span></p>
+   <p><span style= "color:blue">{{ article.object.body }}</span></p>
+   <p><span style= "color:blue"> {{ article.object.slug }}</span></p>
 
      {% endfor %}
 					<!-- {% for entry in ent_search %}
@@ -90,6 +90,7 @@
 
 
 
+
 	
 
 {% endblock %}
@@ -126,6 +127,10 @@
             </ol>
           </div>
 	   </div>
+
+     <input type="text" name="name" id="name">
+     <button type="submit" id="home" onclick="validate()" value="checkvalue">send data</button>
+     <br><br><br><br>
 
 {% endblock %}
 
