@@ -30,7 +30,7 @@ elasticsearch==1.9.0
 enum34==1.0.4
 facepy==1.0.7
 gunicorn==19.3.0
-httplib2==0.9.2
+httplib2==0.18.0
 idna==2.0
 ipaddress==1.0.14
 lxml==3.4.4
