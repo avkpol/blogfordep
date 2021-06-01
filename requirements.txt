@@ -59,7 +59,7 @@ runscript==0.2.2
 simplejson==3.8.1
 six==1.10.0
 stripe==1.27.0
-urllib3==1.12
+urllib3==1.26.5
 virtualenv==12.1.1
 wsgiref==0.1.2
 xattr==0.6.4
