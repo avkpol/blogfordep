@@ -4,7 +4,7 @@ MySQL-python==1.2.5
 Pillow==3.0.0
 PyJWT==1.4.0
 PyRSS2Gen==1.0.0
-Twisted==12.2.0
+Twisted==22.4.0
 altgraph==0.10.1
 bdist-mpkg==0.4.4
 beautifulsoup4==4.4.0
